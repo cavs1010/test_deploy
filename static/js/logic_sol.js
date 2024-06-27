@@ -80,10 +80,9 @@ function createMap(bikeStations) {
   // 🚨 Syntax hint: L.map("map-id", { options });
 
   // Create a layer control, and pass it baseMaps and overlayMaps. Add the layer control to the map.
-  // L.control
-  //   .layers(baseMaps, overlayMaps, {
-  //     collapsed: false, // Ensure the layer control is not collapsed by default
-  //   })
+  L.control.layers(baseMaps, overlayMaps, {
+    collapsed: false, // Ensure the layer control is not collapsed by default
+  });
   //   .addTo(map);
   // 🚨 Syntax hint: L.control
   //   .layers(baseMaps, overlayMaps, { options })
